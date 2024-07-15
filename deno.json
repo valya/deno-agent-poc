@@ -1,0 +1,15 @@
+{
+  "tasks": {
+    "dev": "deno run --unstable-worker-options --allow-net --allow-read --watch main.ts"
+  },
+  "imports": {
+      "n8n-workflow": "npm:n8n-workflow"
+  },
+  "compilerOptions": {
+      "lib": [
+          "deno.window",
+          "deno.unstable",
+          "deno.worker"
+      ]
+  }
+}
